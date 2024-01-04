@@ -51,16 +51,16 @@ function animate() {
   context.drawImage(playerImage, 0, 0, playerImage.width/4, playerImage.height, canvas.width / 2 - playerImage.width / 2 / 4, canvas.height / 2 - playerImage.height / 2, playerImage.width/4, playerImage.height );
 
   if (keys.w.pressed) {
-    background.position.y = background.position.y + 5
+    background.position.y += 5
   }
   if (keys.a.pressed) {
-    background.position.x = background.position.x + 5
+    background.position.x += 5
   }
   if (keys.s.pressed) {
-    background.position.y = background.position.y - 5
+    background.position.y -= 5
   }
   if (keys.d.pressed) {
-    background.position.x = background.position.x - 5
+    background.position.x -= 5
   }
 }
 
